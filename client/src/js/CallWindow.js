@@ -39,8 +39,15 @@ function CallWindow({ peerSrc, localSrc, config, mediaDevice, status, endCall })
 
   return (
     <div className={classnames('call-window', status)}>
-      <video id="peerVideo" ref={peerVideo} autoPlay />
-      <video id="localVideo" ref={localVideo} autoPlay muted />
+      <div class="splitscreen">
+        <div class="left">
+          <video id="splitVideo" ref={peerVideo} autoPlay />
+        </div>
+
+        <div class="right">
+          <video id="splitVideo" ref={localVideo} autoPlay muted />
+        </div>
+      </div>
       <div className="video-control">
         <button
           key="btnVideo"

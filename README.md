@@ -20,6 +20,9 @@ yarn watch:server
 yarn watch:client
 ```
 
+It doesn't matter which you start first. Once you've started both, navigate to
+```http://localhost:9000/``` in your browser.
+
 
 ### Deployment
 

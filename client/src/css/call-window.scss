@@ -50,6 +50,34 @@
 		width: 100%;
 		height: 100%;
 	}
+
+	#upperRightVideo {
+		display: inline-block;
+		width: 50%;
+		height: auto;
+	}
+
+	#upperLeftVideo {
+		display: inline-block;
+		width: 50%;
+		height: auto;
+	}
+
+	#splitVideo {
+		width: 50%;
+		height: auto;
+	}
+}
+
+.splitscreen {
+	display:flex;
+}
+
+.splitscreen .left {
+	flex: 1;
+}
+.splitscreen .right {
+	flex: 1;
 }
 
 @include keyframes(in-fadeout) {
